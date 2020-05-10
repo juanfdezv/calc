@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <h1 class="big-number">6960</h1>
+            <p class="partial-result">123654</p>
+        </div>
+        <div class="keyboard">
+            <div class="grid-item red" id="clear"><i class="far fa-trash-alt"></i></div>
+            <div class="grid-item faded" style="font-weight: 900;" data-pleft>(</div>
+            <div class="grid-item faded" style="font-weight: 900;" data-pright>)</div>
+            <div class="grid-item" id="divide"><div class="circle"><i class="fas fa-divide"></i></div></div>
+            <div class="grid-item" data-number>7</div>
+            <div class="grid-item" data-number>8</div>
+            <div class="grid-item" data-number>9</div>
+            <div class="grid-item" id="times"><div class="circle"><i class="fas fa-times"></i></div></div>
+            <div class="grid-item" data-number>4</div>
+            <div class="grid-item" data-number>5</div>
+            <div class="grid-item" data-number>6</div>
+            <div class="grid-item" id="minus"><div class="circle"><i class="fas fa-minus"></i></div></div>
+            <div class="grid-item" data-number>1</div>
+            <div class="grid-item" data-number>2</div>
+            <div class="grid-item" data-number>3</div>
+            <div class="grid-item" id="plus"><div class="circle"><i class="fas fa-plus"></i></div></div>
+            <div class="grid-item faded" style="font-size: 0.85em;" id="backspace"><i class="fas fa-backspace"></i></div>
+            <div class="grid-item" data-number>0</div>
+            <div class="grid-item" data-dot style="color: #818181">•</div>
+            <div class="grid-item" id="equals"><div class="circle"><i class="fas fa-equals"></i></div></div>
+        </div>
+    </div>
+    <script src="split.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

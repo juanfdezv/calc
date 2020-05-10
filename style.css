@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Varela Round", sans-serif;
+    font-size: 1.5em;
+}
+
+.calculator{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.screen{
+    width: 100%;
+    height: 25%;
+    background: rgb(242,235,238);
+    background: linear-gradient(0deg, rgba(242,235,238,1) 0%, rgba(250,243,246,1) 16%, rgba(255,253,254,1) 100%);
+    border-bottom: 3px solid #efe9eb;
+}
+
+.keyboard{
+    width: 100%;
+    height: 75%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    text-align: center;
+    padding: 1em;
+}
+
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item:hover{
+    cursor: pointer;
+}
+
+.circle{
+    background-color: #f0f0f0;
+    color: #636363;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.faded{
+    color: #818181;
+    font-size: 0.75em;
+}
+
+.red{
+    color: #cf3a4f;
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 1em;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: end;
+}
+
+.big-number{
+    font-weight: 300;
+    line-height: 0.9em;
+    margin-bottom: 0.2125em;
+}
+
+.partial-result{
+    font-weight: 200;
+    font-size: 0.75em;
+    color: #636363;
+}
+
+.circle .fas{
+    font-size: 0.65em;
+}
